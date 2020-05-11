@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vscode/
+pulse-rate.psd
+robots.txt
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
