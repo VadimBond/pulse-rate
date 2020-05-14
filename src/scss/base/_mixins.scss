@@ -8,6 +8,13 @@
   }
 }
 
+$maxWidth: 1280;
+@mixin font-adaptive($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
 @mixin center-xy() {
   position: absolute;
   left: 50%;

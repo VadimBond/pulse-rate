@@ -1,10 +1,10 @@
 // my-gulp
-let project_folder = require("path").basename(__dirname),
+const project_folder = require("path").basename(__dirname),
     source_folder = "src";
 
-let fs = require("fs");
+const fs = require("fs");
 
-let path = {
+const path = {
   dist: {
     html: project_folder + "/",
     css: project_folder + "/css/",
@@ -28,7 +28,7 @@ let path = {
   clean: "./" + project_folder + "/"
 };
 
-let { src, dest } = require("gulp"),
+const { src, dest } = require("gulp"),
     gulp = require("gulp"),
     browser_sync = require("browser-sync").create(),
     file_include = require("gulp-file-include"),
@@ -49,7 +49,7 @@ let { src, dest } = require("gulp"),
     fonter = require("gulp-fonter"),
     spritesmith = require('gulp.spritesmith');
 
-function browserSync(params) {
+function browserSync() {
   browser_sync.init({
     server: {
       baseDir: "./" + project_folder + "/"
@@ -202,14 +202,14 @@ gulp.task("fontStyle", function() {
   }
 });
 
-function watchFiles(params) {
+function watchFiles() {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], img);
 }
 
-function clean(params) {
+function clean() {
   return del(path.clean);
 }
 
