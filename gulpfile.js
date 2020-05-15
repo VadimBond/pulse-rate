@@ -72,7 +72,7 @@ function css() {
     .pipe(
       scss({
         outputStyle: "expanded"
-      }).on('error', sass.logError)
+      }).on('error', scss.logError)
     )
     .pipe(group_media())
     .pipe(
@@ -183,9 +183,9 @@ gulp.task("svg_sprite", function() {
 function cb() {}
 
 gulp.task("fontStyle", function() {
-  let file_content = fs.readFileSync(source_folder + '/scss/_fonts.scss');
+  let file_content = fs.readFileSync(source_folder + '/scss/base/_fonts.scss');
   if (file_content == '') {
-    fs.writeFile(source_folder + '/scss/_fonts.scss', '', cb);
+    fs.writeFile(source_folder + '/scss/base/_fonts.scss', '', cb);
     return fs.readdir(path.dist.fonts, function (err, items) {
       if (items) {
         let c_fontname;
@@ -193,7 +193,7 @@ gulp.task("fontStyle", function() {
           let fontname = items[i].split('.');
           fontname = fontname[0];
           if (c_fontname != fontname) {
-            fs.appendFile(source_folder + '/scss/_fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
+            fs.appendFile(source_folder + '/scss/base/_fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
           }
           c_fontname = fontname;
         }
