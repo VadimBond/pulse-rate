@@ -1,7 +1,3 @@
 @include font("MuseoSansCyrl", "MuseoSansCyrl-Bold", "700", "normal");
 @include font("MuseoSansCyrl", "MuseoSansCyrl-Light", "300", "normal");
 @include font("MuseoSansCyrl", "MuseoSansCyrl-Medium", "500", "normal");
-
-html, body {
-  font-family: $ff-main;
-}

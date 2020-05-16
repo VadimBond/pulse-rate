@@ -125,7 +125,7 @@ function img() {
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
         interlaced: true,
-        optimizationLevel: 3  // 0 to 7
+        optimizationLevel: 4  // 0 to 7
       })
     )
     .pipe(dest(path.dist.img))
@@ -156,11 +156,11 @@ gulp.task('png_sprite', function (cb) {
   const spriteData = src([source_folder + "/img/icons/*.png"])
     .pipe(spritesmith({
       imgName: "sprite.png",
-      imgPath: "../img/sprite.png",
+      imgPath: "../img/icons/sprite.png",
       cssName: "_sprite.scss"
 	  }));
 
-	spriteData.img.pipe(dest(path.dist.img));
+	spriteData.img.pipe(dest([source_folder + "/img/icons/"]));
 	spriteData.css.pipe(dest([source_folder + "/scss/base/"]));
 	cb();
 });

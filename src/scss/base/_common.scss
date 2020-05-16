@@ -1,8 +1,10 @@
+html, body {
+  font-family: $ff-main;
+}
 .container {
   width: 940px;
   margin: 0 auto;
 }
-
 .btn {
   display: inline-block;
   background-color: #c70101;
@@ -10,9 +12,8 @@
   font-weight: 500;
   color: $color-white;
   text-transform: uppercase;
-  // text-decoration: none;
   transition: 0.6s;
   &:hover {
-    background-color: darken(#c70101, 20%);
+    background-color: darken(#c70101, 10%);
   }
 }
