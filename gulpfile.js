@@ -75,12 +75,7 @@ function css() {
       }).on('error', scss.logError)
     )
     .pipe(group_media())
-    .pipe(
-      autoprefixer({
-        overrideBrowserslist: ["last 2 versions"],
-        cascade: true
-      })
-    )
+    .pipe(autoprefixer())
     .pipe(
       webp_css({
         webpClass: '.webp',
