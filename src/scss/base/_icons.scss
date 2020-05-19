@@ -9,4 +9,13 @@
   &__promo-messages {
     @include sprite($promo-messages);
   }
+  &__advantages-cup {
+    @include sprite($advantages-cup);
+  }
+  &__advantages-heart {
+    @include sprite($advantages-heart);
+  }
+  &__advantages-shoe {
+    @include sprite($advantages-shoe);
+  }
 }

@@ -1,0 +1,23 @@
+.consultation {
+  background: #ccc url(../img/consultation/consultation_bg.jpg) center center / cover no-repeat;
+  color: $color-white;
+  padding: 7.4% 0 6.6%;
+  &-title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+  }
+  &-descr {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 3.3%;
+  }
+  &-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 18px 0;
+  }
+}
