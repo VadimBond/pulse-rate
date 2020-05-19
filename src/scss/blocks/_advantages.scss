@@ -35,3 +35,41 @@
     }
   }
 }
+// media
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .advantages {
+    &-blocks {
+      &__item {
+        width: 31%;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 92%;
+  }
+  .advantages {
+    &-title {
+      font-size: 24px;
+    }
+    &-blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__item {
+        width: 80%;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

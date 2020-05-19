@@ -21,3 +21,41 @@
     padding: 18px 0;
   }
 }
+// media
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .consultation {
+    &-title {
+      font-size: 33px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .consultation {
+    &-title {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 92%;
+  }
+  .consultation {
+    text-align: center;
+    &-title {
+      font-size: 20px;
+    }
+    &-descr {
+      font-size: 17px;
+    }
+    &-form {
+      margin: auto;
+    }
+  }
+}
