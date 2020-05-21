@@ -1,0 +1,31 @@
+.carousel {
+  padding: 6% 0;
+  &-wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.my-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__slide {
+    width: 100%;
+  }
+}
+.arrow {
+  @include center-y;
+  background-color: $color-white;
+  &-img {
+    width: 30px;
+    height: 50px;
+  }
+  &--prev {
+    transform: rotateY(180deg) translateY(-50%);
+    left: -13%;
+  }
+  &--next {
+    right: -13%;
+  }
+}

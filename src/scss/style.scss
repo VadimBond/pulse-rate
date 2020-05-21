@@ -1,3 +1,5 @@
+@import "../../node_modules/tiny-slider/src/tiny-slider.scss";
+
 @import "base/my-reboot";
 @import "base/vars";
 @import "base/mixins";
@@ -10,7 +12,7 @@
 @import "blocks/promo";
 @import "blocks/advantages";
 @import "blocks/consultation";
-
+@import "blocks/carousel";
 
 
 
