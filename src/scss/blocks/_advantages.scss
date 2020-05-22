@@ -35,11 +35,8 @@
     }
   }
 }
-// media
-@media (max-width: 991px) {
-  .container {
-    max-width: 720px;
-  }
+
+@media (max-width: 991px) { // container - 720
   .advantages {
     &-blocks {
       &__item {
@@ -48,15 +45,8 @@
     }
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (max-width: 575px) {
-  .container {
-    width: 92%;
-  }
+// media 767 - 540
+@media (max-width: 575px) { // container - 92%
   .advantages {
     &-title {
       font-size: 24px;
