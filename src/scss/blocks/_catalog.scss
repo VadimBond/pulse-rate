@@ -53,3 +53,24 @@
     }
   }
 }
+
+@media (max-width: 767px) { // 540
+  .catalog {
+    &-content {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 575px) { // 92%
+  .catalog {
+    &-title {
+      font-size: 22px;
+    }
+    &-tabs {
+      flex-direction: column;
+      &__tab {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
