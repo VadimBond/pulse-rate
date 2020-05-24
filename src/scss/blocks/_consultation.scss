@@ -34,6 +34,11 @@
     &-title {
       font-size: 25px;
     }
+    &-btn {
+      &:hover {
+        background-color: $color-red;
+      }
+    }
   }
 }
 @media (max-width: 575px) { // 92%
