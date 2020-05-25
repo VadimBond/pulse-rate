@@ -1,5 +1,4 @@
 .overlay {
-  // display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -18,6 +17,7 @@
     right: -40px;
     font-size: 41px;
     line-height: 21px;
+    font-weight: bold;
     color: $color-red;
     cursor: pointer;
   }
@@ -46,6 +46,29 @@
   }
 }
 
-// #consultation, #order, #thanks {
-//   display: none;
-// }
+@media (max-width: 767px) {
+  .modal {
+    &-btn {
+      &:hover {
+        background-color: $color-red;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .modal {
+    width: 76%;
+    padding: 3%;
+    min-height: 200px;
+    &-close {
+      right: -30px;
+    }
+    &-descr {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    &-form {
+      margin: 0 auto;
+    }
+  }
+}

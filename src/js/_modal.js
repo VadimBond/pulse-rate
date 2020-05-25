@@ -42,6 +42,12 @@ function modalOrder(e) {
 
   const modal = document.querySelector("#order");
   modal.classList.toggle("hidden");
+
+  const blockName = e.target.dataset.block;
+  const blockNumber = blockName[blockName.length - 1];
+  const namesFromCatalog = document.querySelectorAll(".product-info__title");
+  const nameInModal = document.querySelector("#order>.modal-descr");
+  nameInModal.textContent = namesFromCatalog[blockNumber - 1].textContent;
 }
 
 const btnsOrder = document.querySelectorAll(".product-buy__btn");
