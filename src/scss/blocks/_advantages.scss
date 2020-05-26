@@ -35,6 +35,16 @@
     }
   }
 }
+.icon {
+  &__advantages {
+    &-heart {
+      animation: heartBeat 1s infinite ease;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
 
 @media (max-width: 991px) { // container - 720
   .advantages {

@@ -2,6 +2,10 @@
   max-height: 630px;
   background-color: #fff9ef;
   position: relative;
+  &-iframe {
+    width: 100%;
+    min-height: 630px;
+  }
   &-info {
     padding: 2.7% 3.7% 3.3%;
     @include center-x;
